@@ -1,27 +1,14 @@
-<nav class="navbar">
-  <div class="navbar-brand">
-    <a class="navbar-item" routerLink="/">
-      <img src="assets/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" height="28">
+<nav class="red">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">
+      <img src="assets/logo.png" class="responsive-img" width="180" alt="">
     </a>
-
-    <div class="navbar-burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <a class="navbar-item" routerLinkActive="active" routerLink="/">
-        Home
-    </a>
-    <a class="navbar-item" routerLinkActive="active" routerLink="/products">
-        Products
-    </a>
-    <a class="navbar-item" routerLinkActive="active" routerLink="/about-us">
-        About us
-    </a>
-    <a class="navbar-item" routerLinkActive="active" routerLink="/contact">
-        Contact
-    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="/">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="/products">Products</a></li>
+      <li routerLinkActive="active"><a routerLink="/about-us">About us</a></li>
+      <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
+    </ul>
   </div>
 </nav>
 <router-outlet></router-outlet>
