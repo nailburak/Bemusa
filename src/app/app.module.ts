@@ -8,9 +8,20 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
+import { CarpetsComponent } from './carpets/carpets.component';
+import { SofaSetComponent } from './sofa-set/sofa-set.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'products', component: ProductsComponent, 
+    children: [
+      { path: '', redirectTo: 'carpets', pathMatch: 'full' },
+      { path: 'carpets', component: CarpetsComponent },
+      { path: 'sofa-set', component: SofaSetComponent }
+    ]
+  },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
@@ -19,7 +30,9 @@ const appRoutes: Routes = [
     HomeComponent,
     ProductsComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    CarpetsComponent,
+    SofaSetComponent
   ],
   imports: [
     BrowserModule,
