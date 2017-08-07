@@ -14,8 +14,8 @@ export const carpets = [
 export const sofaSet = [
     { image: '1', name: 'Antep Set( S + L + 2 A )', price: '$3496' },
     { image: '2', name: 'Mus Set ( 2 S + 2 A )', price: '$2996' },
-    { image: '3', name: 'Como Set ( 2 S + 2 A )', price: '$2748' },
+    // { image: '3', name: 'Como Set ( 2 S + 2 A )', price: '$2748' },
     { image: '4', name: 'Life Set ( 2 S + 2 A )', price: '$2496' },
     { image: '5', name: 'Vision Sectional ', price: '$1999' },
-    { image: '6', name: 'Maxi Set ( 2 S + 2 A )', price: '$1748' }
+    // { image: '6', name: 'Maxi Set ( 2 S + 2 A )', price: '$1748' }
 ]
